@@ -1,18 +1,14 @@
-document.querySelector("h1").textContent = "自分の名前"
-document.querySelector("h2").textContent = "ikawa"
+function changeocolor(){
+    document.getElementById("text").style.color="red";
+}
+document.getElementById("text").style.color="red";
 
-//documentとは！！
-/*htmkファイルで書かれているコードを一つのオブジェクトとしてみなす*/
 
-//DOM(ドム)
-/*ドキュメントオブジェクトモデル　(document object model)の略で
-webページの要素やコンテンツなどをツリー構造で表現したデータモデル*/
+//document.getElementById("text").style.color="red";
+/*  これは、ドキュメントの中の「text」というIDを持っている
+    タグのスタイルの色赤にしてください。*/
 
-//上記コードの意味
-//document.querySelector("h1").textContent = "自分の名前"
+    //document.queryselector("h2").style.color="red"
 
-//ドキュメントの中の("h1")タグを探してね
-//document.querySelector("h1")
-
-//h1タグの中身のtextを変えてね
-//.textdocument = "自分の名前"
+    let count = 0;
+    count++
