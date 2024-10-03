@@ -1,14 +1,11 @@
-function changeocolor(){
-    document.getElementById("text").style.color="red";
+function errorInput(){
+    console.log(document.getElementById("month"))
+    console.log(document.getElementById("day"))
+
+
+
+const month = document.getElementById("month").Value;
+const day = document.getElementById("day").Value;
+
+console.log("month:",month,"day",day)
 }
-document.getElementById("text").style.color="red";
-
-
-//document.getElementById("text").style.color="red";
-/*  これは、ドキュメントの中の「text」というIDを持っている
-    タグのスタイルの色赤にしてください。*/
-
-    //document.queryselector("h2").style.color="red"
-
-    let count = 0;
-    count++
