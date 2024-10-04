@@ -1,11 +1,9 @@
 function errorInput(){
-    console.log(document.getElementById("month"))
-    console.log(document.getElementById("day"))
-
-
-
-const month = document.getElementById("month").Value;
-const day = document.getElementById("day").Value;
-
-console.log("month:",month,"day",day)
+    const month = document.getElementById("month").value;
+    const day = document.getElementById("day").value;
+    if(month<1 || month>12){
+        alert("適切な値ではありません");
+        return
+    }
+    console.log("Month:",month,"Day",day)
 }
