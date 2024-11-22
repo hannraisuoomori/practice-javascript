@@ -17,9 +17,15 @@ function RPS(){
     gameContainer.appendChild(choiceButton);
 
     let image = document.createElement("img");
-    image.alt = "choice";
+    image.alt = "Choice";
     image.style.width = "300px";
     image.style.height = "300px";
+
+    let enemyImage = document.createElement("img");
+    enemyImage.alt = "Choice";
+    enemyImage.style.width = "300px";
+    enemyImage.style.height = "300px";
+
     choiceButton.addEventListener("click",function(){
     switch(select.value){
         case "gu":
@@ -35,9 +41,21 @@ function RPS(){
             break;
     }
     let enemyHand = choices[Math.floor(Math.random()*choices.length)];
-})    
 
-}
+    switch(enemyHand){
+        case "gu":
+            enemyImage.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg"
+            break;
+        case "choki":
+            enemyImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevsfZlWoQjuykCSvXeF6cecfuz08nYWajlA&s";
+             break;
+        case "pa":
+            enemyImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutme5_UiKCN1vLHd2zd3gvqmsjMssNQKGZA&s";
+            break;
+         default:
+            break;
+    }
+})    
 gameContainer.appendChild(image);
 gameContainer.appendChild(enemyImage);
 
