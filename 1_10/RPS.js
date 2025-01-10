@@ -29,13 +29,13 @@ function RPS(){
     choiceButton.addEventListener("click",function(){
     switch(select.value){
         case "gu":
-            image.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg"
+            image.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
             break;
         case "choki":
-            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevsfZlWoQjuykCSvXeF6cecfuz08nYWajlA&s";
+            image.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
              break;
         case "pa":
-            image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutme5_UiKCN1vLHd2zd3gvqmsjMssNQKGZA&s";
+            image.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
             break;
          default:
             break;
@@ -44,13 +44,13 @@ function RPS(){
 
     switch(enemyHand){
         case "gu":
-            enemyImage.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg"
+            enemyImage.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
             break;
         case "choki":
-            enemyImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevsfZlWoQjuykCSvXeF6cecfuz08nYWajlA&s";
+            enemyImage.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
              break;
         case "pa":
-            enemyImage.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutme5_UiKCN1vLHd2zd3gvqmsjMssNQKGZA&s";
+            enemyImage.src = "https://ddnavi.com/wp-content/uploads/2020/09/1266022.jpg";
             break;
          default:
             break;
