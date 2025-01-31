@@ -1,3 +1,17 @@
+const gameSelector = document.getElementById("game-select");
+const gameContainer = document.getElementById("game-container");
+gameSelector.addEventListener("change",function(){
+    gameContainer.innerHTML = "";
+    switch (gameSelector.value){
+        case "number-guess":
+            startNumberGuessGame();
+            break;
+        case "clicker":
+            ClickCounterGame();
+            break;
+    }
+})
+
  function ClickCounterGame(){
  
     let count = 0;
@@ -45,8 +59,8 @@ function startNumberGuessGame() {
     const gameContainer = document.getElementById("game-container");
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     let message = document.createElement("p");
-    message.textContent =0;
-    let input = document.createElement("input");
+    message.textContent = randomNumber;
+    const input = document.createElement("input");
     input.type = "number";
     input.placeholder = "好きな数字を入力してください(1 ~ 100)"
     gameContainer.appendChild(message);
@@ -68,13 +82,11 @@ function startNumberGuessGame() {
 
     gameContainer.appendChild(button);
 
-
-let count = 0;
-const countDisplay = document.createElement("p");
-countDisplay.textContent = `試行回数: ${count}`;
-gameContainer.appendChild(countDisplay);
-
-
+    let count = 0;
+    const countDisplay = document.createElement("p");
+    countDisplay.textContent = `試行回数: ${count}`;
+    gameContainer.appendChild(countDisplay);
+    count++;
+    countDisplay.textContent = `試行回数: ${count}`;
 }
-
 startNumberGuessGame();
