@@ -1,4 +1,6 @@
 const select = document.createElement("select");
+const gameSelector = document.getElementById("game-select");
+const gameContainer = document.getElementById("game-container");
 select.name = "game";
 select.id = "game-select";
 const options = [
@@ -14,15 +16,13 @@ options.forEach(optionData => {
 });
 gameSelector.appendChild(select);
 
-const gameSelector = document.getElementById("game-select");
-const gameContainer = document.getElementById("game-container");
 gameSelector.addEventListener("change",function(){
     gameContainer.innerHTML = "";
     switch (gameSelector.value){
         case "number-guess":
             startNumberGuessGame();
             break;
-        case "clicker":
+        case "cliker":
             ClickCounterGame();
             break;
     }
@@ -69,7 +69,7 @@ gameSelector.addEventListener("change",function(){
     gameContainer.appendChild(button3);
     gameContainer.appendChild(counter);
 }
-ClickCounterGame();
+//ClickCounterGame();
 
 function startNumberGuessGame() {
     const gameContainer = document.getElementById("game-container");
@@ -105,4 +105,4 @@ function startNumberGuessGame() {
     count++;
     countDisplay.textContent = `試行回数: ${count}`;
 }
-startNumberGuessGame();
+//startNumberGuessGame();
